@@ -1042,6 +1042,38 @@
         <p>Form submitted successfully!</p>
         <button id="closePopup" class="btn">Close</button>
     </div>
+    <section id="memory-game-section" class="container">
+        <h2>Memory Game</h2>
+        
+        <div class="content-block">
+            <div class="game-controls">
+                <div class="control-group">
+                    <label for="difficulty">Difficulty:</label>
+                    <select id="difficulty" class="game-select">
+                        <option value="easy">Easy (4x3)</option>
+                        <option value="hard">Hard (6x4)</option>
+                    </select>
+                </div>
+                <button id="btn-start" class="btn">Start Game</button>
+                <button id="btn-restart" class="btn" disabled>Restart</button>
+            </div>
+    
+            <div class="stats-panel">
+                <div class="stat-item">Time: <span id="timer">00:00</span></div>
+                <div class="stat-item">Moves: <span id="move-count">0</span></div>
+                <div class="stat-item">Matches: <span id="match-count">0</span> / <span id="total-pairs">6</span></div>
+                <div class="stat-item highlight">Best (Moves): <span id="best-score">-</span></div>
+            </div>
+            
+            <div id="win-message" class="alert hidden" style="text-align: center; display: none;">
+                <h3>🎉 You Won! 🎉</h3>
+                <p>Great job! You completed the game in <span id="final-moves"></span> moves and <span id="final-time"></span>.</p>
+            </div>
+        </div>
+    
+        <div id="game-board" class="game-board">
+            </div>
+    </section>
     <section id="services" class="services section">      
         <div class="container section-title" data-aos="fade-up">
           <h2>Services & Media Elements</h2>

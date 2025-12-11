@@ -586,3 +586,76 @@ input.valid {
     }
     .front-face { font-size: 2rem; }
 }
+.atm-screen {
+    background-color: #2f3640; 
+    color: #f5f6fa;
+    padding: 30px; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+
+.screen-header {
+    font-size: 0.8rem;
+    color: #7f8fa6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.big-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divider {
+    color: #7f8fa6;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.message-box {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #7f8fa6;
+    font-size: 1rem;
+    min-height: 1.2em; 
+    text-align: center;
+}
+
+.send-money-section {
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+#card-input {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn.send {
+    background-color: #8e44ad;
+    color: white;
+    font-weight: bold;
+}
+.btn.full-width {
+    width: 100%;
+    margin-top: 10px;
+}
